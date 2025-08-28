@@ -392,6 +392,12 @@ function keyDown(e){
     else if(e.key === 'ArrowLeft'){
         leftPressed = true;
     }
+    else if(e.key === 'a'){
+        leftPressed = true;
+    }
+     else if(e.key === 'd'){
+        rightPressed = true;
+    }       
     else if ((e.key === " " || e.code === "Space") && currentState === state.paused){
         currentState = state.playing;
     }   
@@ -407,6 +413,12 @@ function keyUp(e){
     }
     else if(e.key === 'ArrowLeft'){
         leftPressed = false;
+    }
+    else if(e.key === 'a'){
+        leftPressed = false;
+    }
+     else if(e.key === 'd'){
+        rightPressed = false;
     }
 }
 
